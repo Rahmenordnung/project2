@@ -7,7 +7,7 @@ GEEKFORGEEKS {
   text-align: left;
   margin-right: 10px;
   font-family: sans-serif, bold, Arial, Helvetica;
-  font-size: 14px;
+  font-size: 18px;
   border: 1px yellow inset;
   background-color: yellow;
 }
@@ -17,7 +17,30 @@ GEEKFORGEEKS {
 form {
   margin: 0 auto;
   width: 600px;
+  height: 83vh;
 }
+
+#exampleInputPassword1{
+  border: 1px grey inset;
+}
+#exampleCheck1{
+  border: 1px grey inset;
+}
+
+#exampleInputEmail1{
+    border: 1px grey inset;
+}
+
+#exampleCheck1{
+  border: 1px grey inset;
+}
+#subject{
+  border: 1px grey inset;
+  width:550px;
+  height: 75px;
+}
+  
+
 
 .me {}
 
