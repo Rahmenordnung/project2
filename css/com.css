@@ -1,3 +1,6 @@
+/*Contact form*/
+
+
 GEEKFORGEEKS {
   margin-left: 70px;
   font-weight: bold;
@@ -18,6 +21,7 @@ form {
   margin: 0 auto;
   width: 600px;
   height: 83vh;
+  margin-top: 100px;
 }
 
 #exampleInputPassword1{
@@ -36,13 +40,29 @@ form {
 }
 #subject{
   border: 1px grey inset;
-  width:550px;
+  width:600px;
   height: 75px;
+}
+#country{
+  border: 1px grey inset;
+  width:150px;
+  height: 25px;
+}
+.contact_button{
+  border: 1px grey inset;
+  width:150px;
+  height: 25px;
+}
+.about_button{  border: 1px grey inset;
+  width:150px;
+  height: 25px;
 }
   
 
 
-.me {}
+frameset {height: 100px;
+  width:100px;
+}
 
 
 
@@ -195,9 +215,15 @@ footer {
 
 
 img {
-  margin-top: 10px;
-  height: 300px;
-  width: 300px;
+   margin-top: 10px;
+  height: 200px;
+  width: 200px;
+ 
+}
+col-sm{
+   margin-top: 10px;
+  height: 200px;
+  width: 200px;
 }
 
 
@@ -342,6 +368,11 @@ img {
   color: #f252ec;
 
 
+}
+
+.td{
+  font-size: 50px;
+  
 }
 
 
