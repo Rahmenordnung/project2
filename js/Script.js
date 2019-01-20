@@ -74,30 +74,7 @@ function makeGraphs(error, SALESData) {
 
     }
     
-    function Tabletry(ndx) {
-        var dim = ndx.dimension(dc.pluck("ORDERDATE"));
-        var group = dim.group();
-        var dealsizeChart = dc.rowChart
 
-	d3.csv("/data/sales.csv", function(err, data) {
-			if (err) throw err;
-			
-				var ndx = crossfilter(data);
-			var all = ndx.groupAll();
-			
-			 var dim = ndx.dimension(dc.pluck("DEAL-SIZE"));
-
-    	dealsizeChart("#dealsize")
-				.dimension(dim)
-				.group(group)
-				.elasticX(true);
-
-	dc.renderAll();
-
-
-
-		});
-    }
 
 
 
@@ -260,9 +237,9 @@ function makeGraphs(error, SALESData) {
             .colorAccessor(function(d) {
                 return d.key[2].STATUS;
             })
-            .mouseZoomable(true)
+            .mouseZoomable(false)
             .colors(STATUSColors)
-            .brushOn(true)
+            .brushOn(false)
             .dimension(SALESDim)
             .group(SALESGroup);
 

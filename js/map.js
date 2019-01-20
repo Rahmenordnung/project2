@@ -13,7 +13,7 @@
             });
 
 
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZabcdefgijklmnopqrstuvwxyz";
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZabcdefgijklmnopqrstuvwxyzA1,";
             var locations = [{
                 lat: 40.4938993, //Madrid, mora//
                 lng: -3.712306099999978
