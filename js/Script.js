@@ -21,6 +21,7 @@ function makeGraphs(error, SALESData) {
     sales_month(ndx);
     scatter_price(ndx);
     show_Status_products(ndx);
+    Tabletry(ndx);
 
     show_territory_donuts(ndx);
 
@@ -71,6 +72,31 @@ function makeGraphs(error, SALESData) {
             .yAxis().ticks(20);
 
 
+    }
+    
+    function Tabletry(ndx) {
+        var dim = ndx.dimension(dc.pluck("ORDERDATE"));
+        var group = dim.group();
+        var dealsizeChart = dc.rowChart
+
+	d3.csv("/data/sales.csv", function(err, data) {
+			if (err) throw err;
+			
+				var ndx = crossfilter(data);
+			var all = ndx.groupAll();
+			
+			 var dim = ndx.dimension(dc.pluck("DEAL-SIZE"));
+
+    	dealsizeChart("#dealsize")
+				.dimension(dim)
+				.group(group)
+				.elasticX(true);
+
+	dc.renderAll();
+
+
+
+		});
     }
 
 
@@ -289,26 +315,7 @@ function show_Status_products(ndx) {
 
 
 }
-var dealsizeChart = dc.rowChart("#dealsize")
 
-	d3.csv("/data/sales.csv", function(err, data) {
-			if (err) throw err;
-			
-				var ndx = crossfilter(data);
-			var all = ndx.groupAll();
-			
-				var dealsizeDim = ndx.dimension(function(d) { return d["DEAL-SIZE"]; });
-
-    	dealsizeChart
-				.dimension(dealsizeDim)
-				.group(dealsizeGroup)
-				.elasticX(true);
-
-	dc.renderAll();
-
-
-
-		});
 		
 		
 

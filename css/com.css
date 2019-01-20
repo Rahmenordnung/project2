@@ -1,6 +1,5 @@
 /*Contact form*/
 
-
 GEEKFORGEEKS {
   margin-left: 70px;
   font-weight: bold;
@@ -24,44 +23,51 @@ form {
   margin-top: 100px;
 }
 
-#exampleInputPassword1{
-  border: 1px grey inset;
-}
-#exampleCheck1{
+#exampleInputPassword1 {
   border: 1px grey inset;
 }
 
-#exampleInputEmail1{
-    border: 1px grey inset;
+#exampleCheck1 {
+  border: 1px grey inset;
 }
 
-#exampleCheck1{
+#exampleInputEmail1 {
   border: 1px grey inset;
 }
-#subject{
+
+#exampleCheck1 {
   border: 1px grey inset;
-  width:600px;
+}
+
+#subject {
+  border: 1px grey inset;
+  width: 600px;
   height: 75px;
 }
-#country{
+
+#country {
   border: 1px grey inset;
-  width:150px;
+  width: 150px;
   height: 25px;
 }
-.contact_button{
+
+.contact_button {
   border: 1px grey inset;
-  width:150px;
+  width: 150px;
   height: 25px;
 }
-.about_button{  border: 1px grey inset;
-  width:150px;
+
+.about_button {
+  border: 1px grey inset;
+  width: 150px;
   height: 25px;
 }
-  
 
 
-frameset {height: 100px;
-  width:100px;
+
+frameset {
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -167,7 +173,9 @@ p {
 .dc-select-menu {
   color: black;
 }
+
 /*map*/
+
 #Map {
   width: 90%;
   height: 70vh;
@@ -215,13 +223,14 @@ footer {
 
 
 img {
-   margin-top: 10px;
+  margin-top: 10px;
   height: 200px;
   width: 200px;
- 
+
 }
-col-sm{
-   margin-top: 10px;
+
+col-sm {
+  margin-top: 10px;
   height: 200px;
   width: 200px;
 }
@@ -287,66 +296,7 @@ col-sm{
 
 }
 
-.first {
-  font-family: 'Fredericka the Great', cursive;
-  ;
-  font-size: 30px;
-  color: pink;
-  text-indent: 850px;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #1313c6;
 
-}
-
-.second {
-  font-family: 'Fredericka the Great', cursive;
-  ;
-  font-size: 30px;
-  color: #c61364;
-  text-indent: 700px;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #1313c6
-}
-
-.third {
-  font-family: 'Fredericka the Great', cursive;
-  ;
-  font-size: 30px;
-  color: violet;
-  text-indent: 550px;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #1313c6
-}
-
-.forth {
-  font-family: 'Fredericka the Great', cursive;
-  ;
-  font-size: 30px;
-  color: orange;
-  text-indent: 300px;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #1313c6
-}
-
-.fifth {
-  font-family: 'Fredericka the Great', cursive;
-  ;
-  font-size: 30px;
-  color: #a0ccf7;
-  text-indent: 150px;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #1313c6
-}
 
 .row {
   color: black;
@@ -370,9 +320,9 @@ col-sm{
 
 }
 
-.td{
+.td {
   font-size: 50px;
-  
+
 }
 
 
@@ -403,15 +353,64 @@ col-sm{
 .justify-content-start {
   margin-bottom: 25px;
 }
-#country_pie{
-  float:right;
-  
+
+#country_pie {
+  float: right;
+
 }
 
-#donuts{
-  float:right;
+#donuts {
+  float: right;
 }
-.section-paragraph{
-  
+
+.section-paragraph {
+
   font-family: 'Milonga', cursive;
+}
+
+
+/*Home */
+
+.container1>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+html,
+body {
+  background-color: ;
+  margin: 5px;
+}
+
+.container1>div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container1>div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container1>div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container1>div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+.container1 {
+  border: 1px solid purple;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-auto-rows: 550px;
+  font-size: 8px;
+  font-family: 'Emilys Candy', cursive;
+}
+
+.images{
+  max-width: 120px;
 }

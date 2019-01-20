@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="css/com.css" type="text/css" />
     <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Parisienne" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
-    
-    
+
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+
     <script type="text/javascript" src="js/Script.js"></script>
+    <script src="jquery.flip.js"></script>
     
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-
 
 </head>
 
@@ -32,8 +35,8 @@
     <div class="mobile-container">
 
         <!-- Top Navigation Menu -->
-        
-     
+
+
         <!-- Top Navigation Menu -->
         <div class="topnav">
             <a href="home.html" class="active">Our Toys</a>
@@ -46,43 +49,44 @@
     <i class="fa fa-bars"></i>
   </a>
         </div>
-        <div class="wrapper">
-            <section id="main-text">
-                <p class=" col-12  first">HIGH QUALITY </p>
-                <p class=" col-12  second">EXPERT APPROVED </p>
-                <p class=" col-12  third">DIVERSE EXAMPLES </p>
-                <p class=" col-12 forth">DIFFENT TOYS </p>
-                <p class=" col-12 fifth">DELIEVERY ALL OVER THE WORLD </p>
-            </section>
+        <div class="container1">
+   
+            <div id="one"><img class="images" src="/data/image products/c.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/o1.png"/></div>
+            <div id="one"><img class="images" src="/data/image products/l1.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/l2.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/e.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/c2.png"/></div>
+            <div id="one"><img class="images" src="/data/image products/t.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/i.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/o2.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/n.gif"/></div>
         </div>
-        <section class="offers"></section>
+
         <footer>
             <p>Trademark & Copyright Notice: ™ and &copy; 2018 FOX and its related entities.</p>
         </footer>
 </body>
 
 <script>
-    $(document).ready(function() {
-        $("p").hover(function() {
-            $(this).css("color", "");
-        }, function() {
-            $(this).css("color", "white");
-                
-        });
+    $("#one").flip({
+        axis: 'x',
+        trigger: 'hover'
     });
 </script>
 
 
 
-           <script>
-                 function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-                </script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>

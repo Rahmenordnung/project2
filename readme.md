@@ -78,6 +78,11 @@ programming way of thinking and troubleshouting a problem. Many thanks to all!!!
 
 ## Features ##
 
+## HTML ##
+
+We'll use CSS and HTML to position and style the data visualization. Instead of starting from scratch, 
+let's leverage Bootstrap's existing stylesheets and methodology (in most of the areas) to get a decent looking website in a short amount of time.
+
 ## Home ##   
 The page is composed from a simple home space that shows the user whhich are the companys first attributes
 ## Index ##   
@@ -86,6 +91,20 @@ This is the core of the page in which main part of the features are proved in a 
 In this secction the customer has the opportunity (even though fictive) to contact via email the Toys company., It contains a selector with diferent geoprafhical areas.
 ## About ## 
 Here one can see a list with the products that the company provides, and sells to the customer.
+
+## Script.js ##
+
+This file contains javascript language that combined with dc.js, crossfilter on base of d3.js and queue  result in a list of graphical data that make easy the 
+comprehension of the data available in the .csv document.
+
+```
+queue()
+    .defer(d3.csv, "data/sales.csv")
+    .await(makeGraphs);
+
+function makeGraphs(error, SALESData) {
+    var ndx = crossfilter(SALESData)
+```
                  
                  
 ## Thank you very much, for all the help recived from staff, mentors, chat, etc,!!!!## 
@@ -94,7 +113,6 @@ Here one can see a list with the products that the company provides, and sells t
                 
                 
                 
-                
-                
+ 
                 
                 
